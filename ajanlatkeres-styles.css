@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  background-color: #172f53;
+  color: white;
+}
+nav {
+  position:fixed;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  background-color: #172f53;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.topnav li {
+  float: left;
+  height: 30px;
+  width: 15.9%;
+}
+.longline {
+  min-width: 138px;
+}
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 6px;
+  text-decoration: none;
+  font-size: 14px;
+  border-right: 1px solid lightgray;
+  
+}
+ul.topnav li a:hover:not(.active) {
+  background-color: #c9e4ee;
+  color: #172f53;
+}
+ul.topnav li a.active {
+  background-color: #c9e4ee;
+  color: #172f53;
+  cursor: default;
+}
+.text {
+  text-align: center;
+  width: 80%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.social-link {
+  width: 80%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.fb-logo {
+  height: 55px;
+  border-radius: 11px;
+  transition: transform 0.3s ease-out;
+}
+.fb-logo:hover {
+  transform: translateY(8px);
+}
+.divider {
+  height: 2px;
+  border-radius: 1px;
+  width: 100%;
+  background-color: gray;
+}
+@media screen and (max-width: 660px) {
+  ul.topnav li {
+    float: none;
+    width: 100%;
+    background-color: #172f53; 
+    border-bottom: 1px solid lightgray;}
+    
+  .text {
+    padding-top: 280px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 150px;
+    max-width: 90%;
+  }
+  .social-link {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+}
